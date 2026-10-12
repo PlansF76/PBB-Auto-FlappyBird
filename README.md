@@ -11,7 +11,15 @@ and normal Windows mouse input. It moves your cursor inside the arcade to click.
 It pauses when Roblox loses focus. If the bird disappears or the scene stops moving,
 it looks for the green Play button and automatically starts another round.
 
-Install the Python dependencies before running the launcher:
+## First-time Windows setup
+
+1. On the GitHub page, click **Code**, choose **Download ZIP**, and extract the
+   archive.
+2. Install Python 3.11 or newer from [python.org](https://www.python.org/downloads/windows/).
+   Enable **Add python.exe to PATH** in the installer.
+3. Open the extracted project folder, click its address bar, type `cmd`, and
+   press **Enter**.
+4. Install the dependencies:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -20,6 +28,22 @@ python -m pip install -r requirements.txt
 The launcher uses Python from `PATH`, so the project can be cloned and run on
 another Windows machine without editing a user-specific path. The local
 `vendor/` directory is retained for offline reference but is not required.
+
+If Windows reports `Python was not found; run without arguments to install from
+the Microsoft Store`, try the Python launcher instead:
+
+```powershell
+py -3 -m pip install -r requirements.txt
+```
+
+If `py` is also unavailable, Python is not installed correctly. Reinstall it
+from python.org, enable **Add python.exe to PATH**, then open a new Command
+Prompt window and repeat the install command.
+
+Once installation succeeds, open Roblox at the arcade, double-click
+`Run Bot.cmd`, focus Roblox, and press **F8**. Press **F8** again to pause and
+**F9** to exit. Keep Roblox visible on the primary monitor and do not resize or
+move the game window while the helper is running.
 
 The previous threshold rule has been replaced with a controller that predicts
 flap/wait paths through moving gaps over 1.1 seconds. It uses an estimated gravity
