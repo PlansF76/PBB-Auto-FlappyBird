@@ -1,0 +1,11 @@
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = ["vendor", "live_probe.py", "flap_bot_v1.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
