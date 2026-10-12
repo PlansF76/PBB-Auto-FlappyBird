@@ -45,22 +45,6 @@ Once installation succeeds, open Roblox at the arcade, double-click
 **F9** to exit. Keep Roblox visible on the primary monitor and do not resize or
 move the game window while the helper is running.
 
-## Log mouse-click coordinates
-
-To record every left-click position while troubleshooting the Play button, open
-another Command Prompt in this folder and run:
-
-```powershell
-py -3 mouse_click_logger.py
-```
-
-The script prints each click and saves it to `mouse-clicks.csv`. Press **Ctrl+C**
-to stop it. To use a different output file:
-
-```powershell
-py -3 mouse_click_logger.py --output logs\mouse-clicks.csv
-```
-
 The previous threshold rule has been replaced with a controller that predicts
 flap/wait paths through moving gaps over 1.1 seconds. It uses an estimated gravity
 of 6.78 playfield heights/s^2 and a flap speed of 1.48 heights/s, calibrated from
