@@ -53,6 +53,13 @@ This writes `detection-preview.png`, marking the bird and detected gaps.
 `validate_v2.py` reproduces video checks and simulations without sending input.
 `simulation-results.json` contains the latest simulation outcomes.
 
+## How to use
+
+<img width="1051" height="558" alt="Screenshot 2026-10-11 183736" src="https://github.com/user-attachments/assets/eeb4f475-8c12-4bfa-b890-69fa62347c09" />
+### Stand in front of the middle arcade machine like this because typically this will be the easiest of the three machines found in the Golden Poke Ball Arcade.
+Once ready you should press f8, with 'Run Bot.cmd' running in the background. Then the script should automatically press the big green play button. Additionally, I would be wary about testing to see if the script automatically pressed the green play button for the middle arcade machine in order to AFK for long periods of time and continuously gain TIX in the process as the difficult of the other two machines are significantly greater, and ineffective for the script.
+
+
 ## Automatic replay
 
 The launcher now runs `auto_replay.py`, which uses the existing v2 flight detector,
@@ -124,3 +131,8 @@ Live loss-to-restart behavior still needs verification in Roblox.
 Replay and flight events are written to `logs/auto-*.csv`. For manual restarting
 with the previous version, run `flap_bot_v2.py` directly. `test_replay.py` performs
 the offline replay checks without clicking.
+
+
+
+
+
